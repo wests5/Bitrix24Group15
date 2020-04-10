@@ -8,7 +8,7 @@ import org.openqa.selenium.support.PageFactory;
 
 public class LoginPage {
 
-    LoginPage() {
+    public LoginPage() {
         PageFactory.initElements(Driver.getDriver(), this);
     }
 

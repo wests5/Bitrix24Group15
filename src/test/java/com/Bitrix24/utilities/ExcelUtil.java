@@ -1,7 +1,8 @@
 package com.Bitrix24.utilities;
 
 import org.apache.poi.ss.usermodel.*;
-import org.junit.Assert;
+import org.testng.Assert;
+
 
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
@@ -23,7 +24,7 @@ public class ExcelUtil {
 
             workbook = WorkbookFactory.create(ExelFile);
             workSheet = workbook.getSheet(sheetName);
-            Assert.assertNotNull( "Invalid sheet name",workSheet);
+            Assert.assertNotNull( workSheet,"Invalid sheet name");
         } catch (Exception e) {
             throw new RuntimeException(e);
         }
@@ -38,7 +39,7 @@ public class ExcelUtil {
 
             workbook = WorkbookFactory.create(ExelFile);
             workSheet = workbook.getSheet(sheetName);
-            Assert.assertNotNull("Invalid sheet name", workSheet);
+            Assert.assertNotNull( workSheet,"Invalid sheet name");
 
         } catch (Exception e) {
             throw new RuntimeException(e);

@@ -44,7 +44,6 @@ public class TestBase {
         driver = Driver.getDriver();
         driver.get(ConfigurationsReader.getProperty("mainURL"));
         driver.manage().window().maximize();
-        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 
     }
     @AfterMethod
