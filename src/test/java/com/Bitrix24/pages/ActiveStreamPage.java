@@ -23,5 +23,14 @@ public class ActiveStreamPage {
     public WebElement linkSaveBtn;
     @FindBy(id = "blog-submit-button-save")
     public WebElement sendBtn;
+    @FindBy(id = "feed-add-post-form-link-more")
+    public WebElement More;
+    @FindBy(xpath = "//span[@class='menu-popup-item-text' and contains(text(),'Announcement')]")
+    public WebElement Announcement;
+    @FindBy(css = "[title='Visual editor']")
+    public WebElement Visual_Editor;
+    @FindBy(id = "bx-html-editor-tlbr-idPostFormLHE_blogPostForm")
+    public WebElement text_bar;
+
 
 }
