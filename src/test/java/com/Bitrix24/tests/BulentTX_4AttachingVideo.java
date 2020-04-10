@@ -8,7 +8,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.Test;
 
-public class BulentTX_9AttachingVideo extends TestBase{
+public class BulentTX_4AttachingVideo extends TestBase{
 
     @Test(description = " User should be able to attach to video.")
     public void addVideo() throws InterruptedException {
@@ -24,7 +24,7 @@ public class BulentTX_9AttachingVideo extends TestBase{
         wait.until(ExpectedConditions.visibilityOf(activeStreamPage.videoURL));
         wait.until(ExpectedConditions.elementToBeClickable(activeStreamPage.videoURL));
         activeStreamPage.videoURL.sendKeys ("https://www.youtube.com/watch?v=Ik9Y4O6TcF4&t=6s");
-        BrowserUtilities.wait ( 10);
+        BrowserUtilities.wait ( 8 );
         wait.until(ExpectedConditions.visibilityOf(activeStreamPage.saveVideoBtn));
         wait.until(ExpectedConditions.elementToBeClickable(activeStreamPage.saveVideoBtn));
         activeStreamPage.saveVideoBtn.click();
