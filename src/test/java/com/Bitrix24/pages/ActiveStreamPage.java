@@ -23,5 +23,12 @@ public class ActiveStreamPage {
     public WebElement linkSaveBtn;
     @FindBy(id = "blog-submit-button-save")
     public WebElement sendBtn;
+    @FindBy(xpath="/html/body/table/tbody/tr[2]/td/table/tbody/tr[1]/td[2]/table/tbody/tr/td/div/div[2]/div/div[1]/div/div/div[3]/div/div/form/div[1]/div/div[2]/div[3]/div[2]/span[3]/span")
+    public WebElement videoIcon;
+   @FindBy (id="video_idPostFormLHE_blogPostForm-source")
+    public WebElement videoURL;
+   @FindBy(xpath="//*[@id=\"undefined\"]")
+    public WebElement saveVideoBtn;
+
 
 }
