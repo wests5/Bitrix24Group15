@@ -6,6 +6,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 public class ActiveStreamPage {
+
     public ActiveStreamPage() {
         PageFactory.initElements(Driver.getDriver(), this);
     }
@@ -31,6 +32,19 @@ public class ActiveStreamPage {
     public WebElement Visual_Editor;
     @FindBy(id = "bx-html-editor-tlbr-idPostFormLHE_blogPostForm")
     public WebElement text_bar;
+    @FindBy(id = "bx-b-mention-blogPostForm")
+    public WebElement addMentionIcon;
+    @FindBy(linkText = "Employees and departments")
+    public WebElement employeesAndDepartments;
+    @FindBy(xpath = "(//div[@class='bx-finder-company-department-employee-name'])[1]")
+    public WebElement firstContact;
+    @FindBy(xpath = "(//div[@class='bx-finder-company-department-employee-name'])[2]")
+    public WebElement secondContact;
+    @FindBy(xpath = "(//span[@class='feed-add-post-destination-text'])[2]")
+    public WebElement firstContactIntoMentionBox;
+    @FindBy(xpath = "(//span[@class='feed-add-post-destination-text'])[3]")
+    public WebElement secondContactIntoMentionBox;
+
 
 
 }
