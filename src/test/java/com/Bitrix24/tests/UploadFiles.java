@@ -25,5 +25,6 @@ public class UploadFiles extends TestBase {
         activeStreamPage.upload.click ();
         BrowserUtilities.wait ( 4 );
         extentTest.pass("upload button has clicked!");
+
     }
 }
