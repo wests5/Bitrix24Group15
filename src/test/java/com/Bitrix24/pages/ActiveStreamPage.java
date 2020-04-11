@@ -37,4 +37,8 @@ public class ActiveStreamPage {
     public WebElement enterText;
     @FindBy(xpath="//*[@id=\"blog-submit-button-save\"]")
     public WebElement send;
+    @FindBy(id="bx-b-uploadfile-blogPostForm")
+    public WebElement upload;
+    @FindBy(xpath="/html/body/table/tbody/tr[2]/td/table/tbody/tr[1]/td[2]/table/tbody/tr/td/div/div[2]/div/div[1]/div/div/div[3]/div/div/form/div[1]/div/div[2]/div[4]/div[2]/table/tbody/tr[1]/td[1]/div/input")
+    public WebElement uploadFile;
 }
