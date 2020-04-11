@@ -32,7 +32,7 @@ public class Yusuf_1_6_AddMention extends TestBase {
         String expectedFirstContact = activeStreamPage.firstContactIntoMentionBox.getText();
         String expectedSecondContact = activeStreamPage.secondContactIntoMentionBox.getText();
 
-        Assert.assertEquals(expectedFirstContact, actualFirstContact);
-        Assert.assertEquals(expectedSecondContact, actualSecondContact);
+        Assert.assertEquals(actualFirstContact, expectedFirstContact);
+        Assert.assertEquals(actualSecondContact,expectedSecondContact);
     }
 }
