@@ -13,7 +13,6 @@ public class ActiveStreamPage {
 
     @FindBy(id = "microoPostFormLHE_blogPostForm_inner")
     public WebElement sendMessageInput;
-
     @FindBy(css = "span[title='Link']")
     public WebElement linkIcon;
     @FindBy(id = "linkidPostFormLHE_blogPostForm-text")
@@ -32,6 +31,12 @@ public class ActiveStreamPage {
     public WebElement Visual_Editor;
     @FindBy(id = "bx-html-editor-tlbr-idPostFormLHE_blogPostForm")
     public WebElement text_bar;
+
+    @FindBy(xpath = "//span[@id='feed-add-post-form-tab-tasks']//span[contains(text(),'Task')]")
+    public WebElement taskLink;
+    @FindBy(id = "tasks-task-priority-cb")
+    public WebElement highPriorityCheckbox;
+
     @FindBy(id = "bx-b-mention-blogPostForm")
     public WebElement addMentionIcon;
     @FindBy(linkText = "Employees and departments")
@@ -44,6 +49,7 @@ public class ActiveStreamPage {
     public WebElement firstContactIntoMentionBox;
     @FindBy(xpath = "(//span[@class='feed-add-post-destination-text'])[3]")
     public WebElement secondContactIntoMentionBox;
+
 
 
 
