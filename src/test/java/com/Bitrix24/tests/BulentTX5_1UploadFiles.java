@@ -10,7 +10,7 @@ import org.testng.Assert;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
-public class BulentUploadFiles extends TestBase {
+public class BulentTX5_1UploadFiles extends TestBase {
 
     @Test(description=" User should be able to click upload files.")
     public void uploadTest() throws InterruptedException {
