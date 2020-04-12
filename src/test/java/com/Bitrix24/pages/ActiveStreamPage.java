@@ -49,7 +49,14 @@ public class ActiveStreamPage {
     public WebElement firstContactIntoMentionBox;
     @FindBy(xpath = "(//span[@class='feed-add-post-destination-text'])[3]")
     public WebElement secondContactIntoMentionBox;
-
+    @FindBy(xpath="//*[@id=\"bx-b-uploadfile-blogPostForm\"]")
+    public WebElement upload;
+    @FindBy(xpath="//*[@id=\"bx-b-video-blogPostForm\"]/span")
+    public WebElement videoIcon;
+    @FindBy(id="video_idPostFormLHE_blogPostForm-source")
+    public WebElement videoURL;
+    @FindBy(xpath="//*[@id=\"undefined\"]")
+    public WebElement saveVideoBtn;
 
 
 
