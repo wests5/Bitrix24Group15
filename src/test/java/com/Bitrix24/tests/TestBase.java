@@ -8,6 +8,7 @@ import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterTest;
@@ -23,6 +24,7 @@ public class TestBase {
     protected static ExtentReports extentReports;
     protected static ExtentHtmlReporter extentHtmlReporter;
     protected static ExtentTest extentTest;
+    protected WebDriverWait wait = new WebDriverWait(Driver.getDriver(),10);
     @BeforeTest
     public void beforeTest(){
         String filePath = System.getProperty("user.dir")+"/test-output/report.html";
