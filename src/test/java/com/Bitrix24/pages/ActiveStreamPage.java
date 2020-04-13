@@ -8,6 +8,7 @@ import org.openqa.selenium.support.PageFactory;
 public class ActiveStreamPage {
 
     public ActiveStreamPage() {
+
         PageFactory.initElements(Driver.getDriver(), this);
     }
 
@@ -57,6 +58,7 @@ public class ActiveStreamPage {
     public WebElement videoURL;
     @FindBy(xpath="//*[@id=\"undefined\"]")
     public WebElement saveVideoBtn;
+
     @FindBy(xpath = "//*[@id=\"post-buttons-bottom\"]/span[7]")
     public WebElement RecordVideo;
     @FindBy (id="popup-window-content-bx-popup-videomessage-popup")
@@ -67,5 +69,15 @@ public class ActiveStreamPage {
     public WebElement Error;
     @FindBy (id="popup-window-content-bx-popup-videomessage-popup")
     public WebElement errorMessage;
+
+    @FindBy(xpath = "//span[@title='Quote text']")
+
+    public WebElement quoteIcon;
+    @FindBy(className = "bx-editor-iframe")
+    public WebElement frame;
+    @FindBy(xpath = "//blockquote[@class='bxhtmled-quote']")
+    public WebElement quoteInputText;
+
+
 
 }
