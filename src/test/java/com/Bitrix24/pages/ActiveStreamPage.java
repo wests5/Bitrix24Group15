@@ -58,6 +58,18 @@ public class ActiveStreamPage {
     public WebElement videoURL;
     @FindBy(xpath="//*[@id=\"undefined\"]")
     public WebElement saveVideoBtn;
+
+    @FindBy(xpath = "//*[@id=\"post-buttons-bottom\"]/span[7]")
+    public WebElement RecordVideo;
+    @FindBy (id="popup-window-content-bx-popup-videomessage-popup")
+    public WebElement DeviceAccess;
+    @FindBy (xpath= "//*[@id=\"bx-popup-videomessage-popup\"]/div[3]/span[1]")
+    public WebElement AllowAccess;
+    @FindBy (xpath= "//*[@id=\"popup-window-titlebar-bx-popup-videomessage-popup\"]/span")
+    public WebElement Error;
+    @FindBy (id="popup-window-content-bx-popup-videomessage-popup")
+    public WebElement errorMessage;
+
     @FindBy(xpath = "//span[@title='Quote text']")
 
     public WebElement quoteIcon;
@@ -65,11 +77,6 @@ public class ActiveStreamPage {
     public WebElement frame;
     @FindBy(xpath = "//blockquote[@class='bxhtmled-quote']")
     public WebElement quoteInputText;
-
-
-
-
-
 
 
 
