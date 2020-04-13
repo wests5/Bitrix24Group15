@@ -80,4 +80,11 @@ public class ActiveStreamPage {
 
 
 
+
+    @FindBy(id = "feed-add-post-form-link-text")
+    protected WebElement moreTabBtn;
+
+
+
 }
+
