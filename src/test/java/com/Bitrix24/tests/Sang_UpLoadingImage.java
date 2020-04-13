@@ -7,10 +7,10 @@ import org.testng.annotations.Test;
 
 public class Sang_UpLoadingImage extends TestBase {
 
-    @Test
+    @Test(description = "Uploading image file in announcement")
     public void testSevenDashOne(){
 
-
+        extentTest = extentReports.createTest("Uploading image file in announcement");
         AnnouncementPage announcementPage = new AnnouncementPage();
         announcementPage.getToAnnouncementPage();
         announcementPage.clickOnUploadIcon();
