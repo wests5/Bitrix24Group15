@@ -24,4 +24,11 @@ public class ActiveStreamPage {
     @FindBy(id = "blog-submit-button-save")
     public WebElement sendBtn;
 
+
+    @FindBy(id = "feed-add-post-form-link-text")
+    protected WebElement moreTabBtn;
+
+
+
 }
+
