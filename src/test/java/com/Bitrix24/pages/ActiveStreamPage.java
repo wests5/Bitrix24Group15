@@ -84,7 +84,14 @@ public class ActiveStreamPage {
     @FindBy(id = "feed-add-post-form-link-text")
     protected WebElement moreTabBtn;
 
+    @FindBy(id = "lhe_button_title_blogPostForm")
+    public WebElement topicButton;
 
+    @FindBy(id = "#blog-title")
+    public WebElement messageTopicBox;
+
+    @FindBy(id = "POST_TITLE")
+    public WebElement topicBoxtext;
 
 }
 
