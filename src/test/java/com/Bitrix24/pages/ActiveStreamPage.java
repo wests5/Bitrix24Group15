@@ -85,6 +85,11 @@ public class ActiveStreamPage {
     protected WebElement moreTabBtn;
 
 
+    @FindBy(xpath = "//span[@id='bx-b-quote-task-form-lifefeed_task_form']//i" )
+    public WebElement commoIcon;
+    @FindBy(xpath = "//div[@id='bx-html-editor-iframe-cnt-lifefeed_task_form']//iframe[@class='bx-editor-iframe']" )
+    public WebElement quote;
+
 
 }
 
