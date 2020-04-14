@@ -86,5 +86,16 @@ public class ActiveStreamPage {
 
 
 
+    @FindBy (className = "feed-post-important-switch")
+    public WebElement starButton;
+
+
+
+
+
+
+
+
+
 }
 
