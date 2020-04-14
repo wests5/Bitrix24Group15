@@ -99,5 +99,16 @@ public class ActiveStreamPage {
     @FindBy(id = "lhe_button_editor_blogPostForm_calendar")
     public WebElement eventVisualEditor;
 
+    @FindBy (className = "feed-post-important-switch")
+    public WebElement starButton;
+
+
+
+
+
+
+
+
+
 }
 
