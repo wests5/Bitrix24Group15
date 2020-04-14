@@ -92,6 +92,12 @@ public class ActiveStreamPage {
 
     @FindBy(id = "POST_TITLE")
     public WebElement topicBoxtext;
+    @FindBy(id = "feed-add-post-form-tab-calendar")
+    public WebElement eventTab;
+    @FindBy(id = "bx-html-editor-tlbr-oCalEditorcal_3Jcl")
+    public WebElement editorToolBar;
+    @FindBy(id = "lhe_button_editor_blogPostForm_calendar")
+    public WebElement eventVisualEditor;
 
 }
 
