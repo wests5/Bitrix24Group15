@@ -9,7 +9,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class AyseUS4_10AddToFavorites extends TestBase{
+public class AyseUS10_4AddToFavorites extends TestBase{
     @Test(description = "User should be able to add others posts to favorites by clicking on the Star icon")
     public void commaIcon() throws InterruptedException {
         extentTest = extentReports.createTest("User should be able to add others posts to favorites by clicking on the Star icon" );
