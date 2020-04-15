@@ -11,6 +11,7 @@ public class SinemUS2_4CreateQuote extends TestBase {
     @Test(description = " User should be able to create a quote by clicking on the Comma icon.",dataProvider = "credentialsUsers")
     public void highPriority(String userName,String password)  {
         extentTest = extentReports.createTest("User should be able to create a quote by clicking on the Comma icon." );
+
         ActiveStreamPage activeStreamPage = new ActiveStreamPage();
         LoginPage loginPage=new LoginPage();
         loginPage.login(userName,password,false);
