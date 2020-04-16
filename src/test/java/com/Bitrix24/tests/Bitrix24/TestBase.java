@@ -1,4 +1,4 @@
-package com.Bitrix24.tests;
+package com.Bitrix24.tests.Bitrix24;
 
 
 import com.Bitrix24.utilities.ConfigurationsReader;

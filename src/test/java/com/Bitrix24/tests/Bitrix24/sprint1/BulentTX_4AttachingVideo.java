@@ -1,16 +1,15 @@
-package com.Bitrix24.tests;
+package com.Bitrix24.tests.Bitrix24.sprint1;
 
 import com.Bitrix24.pages.ActiveStreamPage;
 import com.Bitrix24.pages.LoginPage;
+import com.Bitrix24.tests.Bitrix24.TestBase;
 import com.Bitrix24.utilities.BrowserUtilities;
 import com.Bitrix24.utilities.Driver;
-import org.openqa.selenium.By;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
-import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class BulentTX_4AttachingVideo extends TestBase{
+public class BulentTX_4AttachingVideo extends TestBase {
 
     @Test(description = " User should be able to attach to video.")
     public void addVideo() throws InterruptedException {

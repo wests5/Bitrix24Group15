@@ -61,11 +61,16 @@ public class ActiveStreamPage {
     public WebElement RecordVideo;
     @FindBy (id="popup-window-content-bx-popup-videomessage-popup")
     public WebElement DeviceAccess;
-    @FindBy (xpath= "//*[@id=\"bx-popup-videomessage-popup\"]/div[3]/span[1]")
+    @FindBy (xpath = "//span[@class='popup-window-button popup-window-button-blue']")
     public WebElement AllowAccess;
-    @FindBy (xpath= "//*[@id=\"popup-window-titlebar-bx-popup-videomessage-popup\"]/span")
-    public WebElement Error;
-    @FindBy (id="popup-window-content-bx-popup-videomessage-popup")
-    public WebElement errorMessage;
+    @FindBy (id= "popup-window-content-bx-popup-videomessage-popup")
+    public WebElement ErrorMessage;
+    @FindBy (xpath= "//span[@class='popup-window-button popup-window-button-blue']")
+    public WebElement CloseErrorMessage;
+    @FindBy (xpath= "//span[contains(text(),'Appreciation')]")
+    public WebElement Appreciation ;
+    @FindBy(xpath="//span[@id='bx-b-uploadfile-blogPostForm']")
+    public WebElement Upload;
+  ;
 
 }

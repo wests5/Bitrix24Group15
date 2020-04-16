@@ -1,7 +1,8 @@
-package com.Bitrix24.tests;
+package com.Bitrix24.tests.Bitrix24.sprint1;
 
 import com.Bitrix24.pages.ActiveStreamPage;
 import com.Bitrix24.pages.LoginPage;
+import com.Bitrix24.tests.Bitrix24.TestBase;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.testng.Assert;
 import org.testng.annotations.DataProvider;

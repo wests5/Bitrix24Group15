@@ -1,19 +1,16 @@
-package com.Bitrix24.tests;
+package com.Bitrix24.tests.Bitrix24.sprint1;
 
 import com.Bitrix24.pages.ActiveStreamPage;
 import com.Bitrix24.pages.LoginPage;
-import com.Bitrix24.utilities.BrowserUtilities;
+import com.Bitrix24.tests.Bitrix24.TestBase;
 import com.Bitrix24.utilities.Driver;
-import com.aventstack.extentreports.reporter.configuration.Theme;
 import org.openqa.selenium.By;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-import static com.Bitrix24.tests.TestBase.extentReports;
-
-public class MykytaUS1_3AttachingLink extends TestBase{
+public class MykytaUS1_3AttachingLink extends TestBase {
 
     @Test(description = " User should be able to attach link by clicking on the link icon.")
     public void attachLink() throws InterruptedException {
