@@ -110,8 +110,7 @@ public class ActiveStreamPage {
     @FindBy(xpath = "//div[@id='bx-html-editor-iframe-cnt-lifefeed_task_form']//iframe[@class='bx-editor-iframe']")
     public WebElement frame1;
     @FindBy(xpath = "//blockquote[@class='bxhtmled-quote']")
-    public WebElement quoteInputText;
-    @FindBy(name= "ACTION[0][ARGUMENTS][data][TITLE]")
+
     public WebElement taskName;
     @FindBy(id= "bx-b-quote-task-form-lifefeed_task_form")
     public WebElement commaIcon;
